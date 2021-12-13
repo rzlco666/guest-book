@@ -27,6 +27,26 @@
 
         <script src="https://unicons.iconscout.com/release/v2.0.1/script/monochrome/bundle.js"></script>
 
+        <!-- Required datatable js -->
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons examples -->
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/jszip/jszip.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+        <!-- Responsive examples -->
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="<?= base_url('assets_petugas/'); ?>libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="<?= base_url('assets_petugas/'); ?>js/pages/datatables.init.js"></script>
+
+
         <!-- datepicker -->
         <script src="<?= base_url('assets_petugas/'); ?>libs/air-datepicker/js/datepicker.min.js"></script>
         <script src="<?= base_url('assets_petugas/'); ?>libs/air-datepicker/js/i18n/datepicker.en.js"></script>

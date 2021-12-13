@@ -10,16 +10,16 @@
                             <li class="menu-title">Menu</li>
 
                             <li>
-                                <a href="index.html" class="waves-effect">
-                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-airplay"></i></div><span class="badge badge-pill badge-success float-right">3</span>
+                                <a href="<?= base_url('petugas/'); ?>" class="waves-effect">
+                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-airplay"></i></div>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="calendar.html" class=" waves-effect">
-                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-schedule"></i></div>
-                                    <span>Calendar</span>
+                                <a href="<?= base_url('datapetugas/'); ?>" class=" waves-effect">
+                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-bag"></i></div>
+                                    <span>Data Petugas</span>
                                 </a>
                             </li>
 
