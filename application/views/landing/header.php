@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Buku Tamu &mdash; Institut Teknologi Sains dan Kesehatan PKU Muhammadiyah Surakarta.</title>
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/owl.carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/owl.carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/aos/css/aos.css">
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/jquery-flipster/css/jquery.flipster.css">
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/style.css">
+    <link rel="shortcut icon" href="<?= base_url('assets/'); ?>images/favicon-itspku.png" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="mobile-menu-overlay"></div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="<?= base_url('assets/'); ?>images/logo_web.png" alt="ITS PKU"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
+                    <img src="<?= base_url('assets/'); ?>images/logo-dark.svg" class="logo-mobile-menu" alt="logo">
+                    <a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
+                </div>
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Buku Tamu</a>
+                    </li> 
+                    <!-- <li class="nav-item">
+                        <a class="nav-link btn btn-success" href="#contact">174-394-9560</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
