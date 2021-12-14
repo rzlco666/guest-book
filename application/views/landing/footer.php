@@ -4,15 +4,11 @@
             <div class="row">
                 <div class="col-sm-6">
                     <address>
-                        <p>143 castle road 517</p>
-                        <p class="mb-4">district, kiyev port south Canada</p>
+                        <p>Kampus Institut Teknologi Sains dan Kesehatan PKU Muhammadiyah Surakarta.</p>
+                        <p class="mb-4">Jl. Tulang Bawang No. 26 Kadipiro Banjarsari Kota Surakarta Jawa Tengah</p>
                         <div class="d-flex align-items-center">
-                            <p class="mr-4 mb-0">+3 123 456 789</p>
-                            <a href="mailto:info@yourmail.com" class="footer-link">info@yourmail.com</a>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <p class="mr-4 mb-0">+1 222 345 342</p>
-                            <a href="mailto:Marshmallow@yourmail.com" class="footer-link">Marshmallow@yourmail.com</a>
+                            <p class="mr-4 mb-0">(0271) 734955</p>
+                            <a href="mailto:info@itspku.ac.id" class="footer-link">info@itspku.ac.id</a>
                         </div>
                     </address>
                     <div class="social-icons">
@@ -66,14 +62,13 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center">
-                    <img src="<?= base_url('assets/'); ?>images/logo.svg" alt="logo" class="mr-3">
-                    <p class="mb-0 text-small pt-1">© 2019-2020 <a href="https://www.bootstrapdash.com" class="text-white" target="_blank">BootstrapDash</a>. All rights reserved.</p>
+                    <img src="<?= base_url('assets/'); ?>images/logo_web2.png" alt="ITS PKU" class="mr-3">
+                    <p class="mb-0 text-small pt-1"><?php echo date("Y"); ?> © ITS PKU Muhammadiyah Surakarta.</p>
                 </div>
                 <div>
                     <div class="d-flex">
                         <a href="#" class="text-small text-white mx-2 footer-link">Privacy Policy </a>
                         <a href="#" class="text-small text-white mx-2 footer-link">Customer Support </a>
-                        <a href="#" class="text-small text-white mx-2 footer-link">Careers </a>
                     </div>
                 </div>
             </div>

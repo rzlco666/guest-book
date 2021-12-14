@@ -7,20 +7,16 @@
 								<div class="d-sm-flex justify-content-between">
 									<div data-aos="zoom-in-up">
 										<div class="banner-title">
-											<h3 class="font-weight-medium">We Help Power
-												Millions Of Businesses
-												in 100+ Countries
+											<h3 class="font-weight-medium">Selamat datang di
+												ITS PKU Muhammadiyah Surakarta
 											</h3>
 										</div>
-										<p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-
-											<br>
-											Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										<p class="mt-3"><b>#SudahSaatnya</b> menjadi bagian dari ITS PKU Muhammadiyah Surakarta. <br>Daftarkan sekarang juga untuk bergabung bersama kami.
 										</p>
-										<a href="#tamu" class="btn btn-secondary mt-3">Learn more</a>
+										<a href="https://itspku.ac.id/" target="_blank" class="btn btn-secondary mt-3">Selengkapnya</a>
 									</div>
 									<div class="mt-5 mt-lg-0">
-										<img src="<?= base_url('assets/'); ?>images/group.png" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
+										<img width="600" src="<?= base_url('assets/'); ?>images/background.png" alt="ITS PKU" class="img-fluid" data-aos="zoom-in-up">
 									</div>
 								</div>
 							</div>
@@ -400,12 +396,12 @@
 										<li>
 											<div class="testimonial-item">
 												<!-- <img src="<?= base_url('assets/'); ?>images/testimonial/testimonial1.jpg" alt="icon" class="testimonial-icons"> -->
-												<p><?php echo $datatamu->keperluan;?>
+												<h6 class="testimonial-author"><?php echo $datatamu->nama; ?></h6>
+												<p class="testimonial-destination"><?php echo $datatamu->alamat; ?></p>
+												<p><?php echo $datatamu->keperluan; ?>
 												</p>
-												<p><?php echo format_indo(date('Y-m-d H:i:s'),$datatamu->tanggal);?>
+												<p><?php echo format_indo(date('Y-m-d'), $datatamu->tanggal); ?>
 												</p>
-												<h6 class="testimonial-author"><?php echo $datatamu->nama;?></h6>
-												<p class="testimonial-destination"><?php echo $datatamu->alamat;?></p>
 											</div>
 										</li>
 									<?php endforeach; ?>
