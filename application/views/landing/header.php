@@ -19,7 +19,7 @@
     <div id="mobile-menu-overlay"></div>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="<?= base_url('assets/'); ?>images/logo_web.png" alt="ITS PKU"></a>
+            <a class="navbar-brand" href="<?= base_url('/'); ?>"><img src="<?= base_url('assets/'); ?>images/logo_web.png" alt="ITS PKU"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
             </button>
@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>-->
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Buku Tamu</a>
+                        <a class="nav-link" href="#tamu">Buku Tamu</a>
                     </li> 
                     <!-- <li class="nav-item">
                         <a class="nav-link btn btn-success" href="#contact">174-394-9560</a>

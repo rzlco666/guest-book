@@ -1,34 +1,34 @@
 		<div class="page-body-wrapper">
-		    <section id="home" class="home">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12">
-		                    <div class="main-banner">
-		                        <div class="d-sm-flex justify-content-between">
-		                            <div data-aos="zoom-in-up">
-		                                <div class="banner-title">
-		                                    <h3 class="font-weight-medium">We Help Power
-		                                        Millions Of Businesses
-		                                        in 100+ Countries
-		                                    </h3>
-		                                </div>
-		                                <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			<section id="home" class="home">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="main-banner">
+								<div class="d-sm-flex justify-content-between">
+									<div data-aos="zoom-in-up">
+										<div class="banner-title">
+											<h3 class="font-weight-medium">We Help Power
+												Millions Of Businesses
+												in 100+ Countries
+											</h3>
+										</div>
+										<p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
-		                                    <br>
-		                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-		                                </p>
-		                                <a href="#contact" class="btn btn-secondary mt-3">Learn more</a>
-		                            </div>
-		                            <div class="mt-5 mt-lg-0">
-		                                <img src="<?= base_url('assets/'); ?>images/group.png" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-		    <!-- <section class="our-services" id="services">
+											<br>
+											Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										</p>
+										<a href="#tamu" class="btn btn-secondary mt-3">Learn more</a>
+									</div>
+									<div class="mt-5 mt-lg-0">
+										<img src="<?= base_url('assets/'); ?>images/group.png" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="our-services" id="services">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12">
@@ -108,7 +108,7 @@
 		            </div>
 		        </div>
 		    </section> -->
-		    <!-- <section class="our-process" id="about">
+			<!-- <section class="our-process" id="about">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-6" data-aos="fade-up">
@@ -137,7 +137,7 @@
 		            </div>
 		        </div>
 		    </section> -->
-		    <!-- <section class="our-projects" id="projects">
+			<!-- <section class="our-projects" id="projects">
 		        <div class="container">
 		            <div class="row mb-5">
 		                <div class="col-sm-12">
@@ -238,7 +238,7 @@
 		            </div>
 		        </div>
 		    </section> -->
-		    <!-- <section class="clients pt-5 mt-5" data-aos="fade-up" data-aos-offset="-400">
+			<!-- <section class="clients pt-5 mt-5" data-aos="fade-up" data-aos-offset="-400">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12">
@@ -253,7 +253,7 @@
 		            </div>
 		        </div>
 		    </section> -->
-		    <!-- <section class="pricing-list" id="plans">
+			<!-- <section class="pricing-list" id="plans">
 		        <div class="container">
 		            <div class="row" data-aos="fade-up" data-aos-offset="-500">
 		                <div class="col-sm-12">
@@ -324,109 +324,95 @@
 		            </div>
 		        </div>
 		    </section> -->
-		    <section class="contactus" id="contact">
-		        <div class="container">
-		            <div class="row mb-5 pb-5">
-		                <!-- <div class="col-sm-5" data-aos="fade-up" data-aos-offset="-500">
+			<section class="contactus" id="tamu">
+				<div class="container">
+					<div class="row mb-5 pb-5">
+						<!-- <div class="col-sm-5" data-aos="fade-up" data-aos-offset="-500">
 		                    <img src="<?= base_url('assets/'); ?>images/contact.jpg" alt="contact" class="img-fluid">
 		                </div> -->
-		                <div class="col" data-aos="fade-up" data-aos-offset="-500">
-		                    <h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Buku Tamu</h3>
-		                    <h5 class="text-dark mb-5">Silahkan mengisi buku tamu</h5>
-		                    <form>
-		                        <div class="row">
-		                            <div class="col-sm-6">
-		                                <div class="form-group">
-		                                    <input type="text" class="form-control" id="name" placeholder="Name*">
-		                                </div>
-		                            </div>
-		                            <div class="col-sm-6">
-		                                <div class="form-group">
-		                                    <input type="email" class="form-control" id="mail" placeholder="Email*">
-		                                </div>
-		                            </div>
-		                            <div class="col-sm-12">
-		                                <div class="form-group">
-		                                    <textarea name="message" id="message" class="form-control" placeholder="Message*" rows="5"></textarea>
-		                                </div>
-		                            </div>
-		                            <div class="col-sm-12">
-		                                <a href="#" class="btn btn-secondary">SEND</a>
-		                            </div>
-		                        </div>
-		                    </form>
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-		    <section class="testimonial" id="testimonial">
-		        <div class="container">
-		            <div class="row  mt-md-0 mt-lg-4">
-		                <div class="col-sm-6 text-white" data-aos="fade-up">
-		                    <p class="font-weight-bold mb-3">Buku Tamu</p>
-		                    <h3 class="font-weight-medium">Daftar tamu hari ini</h3>
-		                    <ul class="flipster-custom-nav">
-		                        <li class="flipster-custom-nav-item">
-		                            <a href="javascript:;" class="flipster-custom-nav-link" title="0"></a>
-		                        </li>
-		                        <li class="flipster-custom-nav-item">
-		                            <a href="javascript:;" class="flipster-custom-nav-link" title="1"></a>
-		                        </li>
-		                        <li class="flipster-custom-nav-item">
-		                            <a href="javascript:;" class="flipster-custom-nav-link" title="2"></a>
-		                        </li>
-		                        <li class="flipster-custom-nav-item">
-		                            <a href="javascript:;" class="flipster-custom-nav-link" title="3"></a>
-		                        </li>
-		                    </ul>
-		                </div>
-		                <div class="col-sm-6" data-aos="fade-up">
-		                    <div id="testimonial-flipster">
-		                        <ul>
-		                            <li>
-		                                <div class="testimonial-item">
-		                                    <!-- <img src="<?= base_url('assets/'); ?>images/testimonial/testimonial1.jpg" alt="icon" class="testimonial-icons"> -->
-		                                    <p>Lorem ipsum dolor sit amet, consectetur
-		                                        pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
-		                                    </p>
-		                                    <h6 class="testimonial-author">Mark Spenser</h6>
-		                                    <p class="testimonial-destination">Accounts</p>
-		                                </div>
-		                            </li>
-		                            <li>
-		                                <div class="testimonial-item">
-		                                    <!-- <img src="<?= base_url('assets/'); ?>images/testimonial/testimonial2.jpg" alt="icon" class="testimonial-icons"> -->
-		                                    <p>Lorem ipsum dolor sit amet, consectetur
-		                                        pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
-		                                    </p>
-		                                    <h6 class="testimonial-author">Tua Manuera</h6>
-		                                    <p class="testimonial-destination">Director,Dj market</p>
-		                                </div>
-		                            </li>
-		                            <li>
-		                                <div class="testimonial-item">
-		                                    <!-- <img src="<?= base_url('assets/'); ?>images/testimonial/testimonial3.jpg" alt="icon" class="testimonial-icons"> -->
-		                                    <p>Lorem ipsum dolor sit amet, consectetur
-		                                        pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
-		                                    </p>
-		                                    <h6 class="testimonial-author">Sarah Philip</h6>
-		                                    <p class="testimonial-destination">Chief Accountant</p>
-		                                </div>
-		                            </li>
-		                            <li>
-		                                <div class="testimonial-item">
-		                                    <!-- <img src="<?= base_url('assets/'); ?>images/testimonial/testimonial4.jpg" alt="icon" class="testimonial-icons"> -->
-		                                    <p>Lorem ipsum dolor sit amet, consectetur
-		                                        pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
-		                                    </p>
-		                                    <h6 class="testimonial-author">Mark Spenser</h6>
-		                                    <p class="testimonial-destination">Director,Dj market</p>
-		                                </div>
-		                            </li>
-		                        </ul>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section>
+						<div class="col" data-aos="fade-up" data-aos-offset="-500">
+							<h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Buku Tamu</h3>
+							<h5 class="text-dark mb-5">Silahkan mengisi buku tamu</h5>
+							<p class="mb-4">
+								<font color="green"><?php echo $this->session->flashdata('pesan_tamu'); ?></font>
+							</p>
+							<?php echo form_open('welcome/tamu_proses', ''); ?>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
+										<?php echo form_error('nama', '<div class="text-danger"><small>', '</small></div>'); ?>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="number" class="form-control" name="no_hp" id="no_hp" placeholder="No HP">
+										<?php echo form_error('no_hp', '<div class="text-danger"><small>', '</small></div>'); ?>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat/Institusi">
+										<?php echo form_error('alamat', '<div class="text-danger"><small>', '</small></div>'); ?>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<textarea name="keperluan" id="keperluan" class="form-control" placeholder="Keperluan" rows="5"></textarea>
+										<?php echo form_error('keperluan', '<div class="text-danger"><small>', '</small></div>'); ?>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<button class="btn btn-secondary" type="submit">Kirim</button>
+								</div>
+							</div>
+							<?php echo form_close(); ?>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="testimonial" id="testimonial">
+				<div class="container">
+					<div class="row  mt-md-0 mt-lg-4">
+						<div class="col-sm-6 text-white" data-aos="fade-up">
+							<p class="font-weight-bold mb-3">Buku Tamu</p>
+							<h3 class="font-weight-medium">Daftar tamu hari ini</h3>
+							<!-- <ul class="flipster-custom-nav">
+								<li class="flipster-custom-nav-item">
+									<a href="javascript:;" class="flipster-custom-nav-link" title="0"></a>
+								</li>
+								<li class="flipster-custom-nav-item">
+									<a href="javascript:;" class="flipster-custom-nav-link" title="1"></a>
+								</li>
+								<li class="flipster-custom-nav-item">
+									<a href="javascript:;" class="flipster-custom-nav-link" title="2"></a>
+								</li>
+								<li class="flipster-custom-nav-item">
+									<a href="javascript:;" class="flipster-custom-nav-link" title="3"></a>
+								</li>
+							</ul> -->
+						</div>
+						<div class="col-sm-6" data-aos="fade-up">
+							<div id="testimonial-flipster">
+								<ul>
+									<?php $no = 1;
+									foreach ($tamu as $datatamu) : ?>
+										<li>
+											<div class="testimonial-item">
+												<!-- <img src="<?= base_url('assets/'); ?>images/testimonial/testimonial1.jpg" alt="icon" class="testimonial-icons"> -->
+												<p><?php echo $datatamu->keperluan;?>
+												</p>
+												<p><?php echo format_indo(date('Y-m-d H:i:s'),$datatamu->tanggal);?>
+												</p>
+												<h6 class="testimonial-author"><?php echo $datatamu->nama;?></h6>
+												<p class="testimonial-destination"><?php echo $datatamu->alamat;?></p>
+											</div>
+										</li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
