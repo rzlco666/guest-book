@@ -7,29 +7,32 @@ class Petugas extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('m_petugas');
+        $this->load->model('M_petugas');
     }
 
     public function index()
     {
 
         if ($this->session->userdata('is_login') == FALSE) {
-            redirect('/petugas/login/', 'refresh');
+            redirect('/Petugas/login/', 'refresh');
         }
 
         $data['title'] = 'Dashboard';
+
+        $data['grafik_penjualan'] = $this->M_petugas->query("SELECT COUNT(id_tamu) as total, DATE_FORMAT(tanggal,'%M-%y') as bulan FROM `tamu` GROUP BY month(tanggal) ORDER BY tanggal ASC")->result();
 
         $this->load->view('petugas/layout/header', $data);
         $this->load->view('petugas/layout/sidebar');
         $this->load->view('petugas/index', $data);
         $this->load->view('petugas/layout/footer');
+        $this->load->view('petugas/script', $data);
     }
 
     public function login()
     {
 
         if ($this->session->userdata('is_login') == TRUE) {
-            redirect('petugas/index', 'refresh');
+            redirect('Petugas/index', 'refresh');
         }
         
         $data['title'] = 'Login';
@@ -41,7 +44,7 @@ class Petugas extends CI_Controller
     {
 
         if ($this->session->userdata('is_login') == TRUE) {
-            redirect('petugas/index', 'refresh');
+            redirect('Petugas/index', 'refresh');
         }
 
         $data['title'] = 'Register';
@@ -58,14 +61,14 @@ class Petugas extends CI_Controller
 
         if ($this->form_validation->run() == TRUE) {
 
-            if ($this->m_petugas->m_register()) {
+            if ($this->M_petugas->m_register()) {
 
                 $this->session->set_flashdata('pesan', 'Register berhasil, silahkan  Sign In.');
-                redirect('/petugas/login/', 'refresh');
+                redirect('/Petugas/login/', 'refresh');
             } else {
 
                 $this->session->set_flashdata('pesan', 'Register user gagal!');
-                redirect('/petugas/register/', 'refresh');
+                redirect('/Petugas/register/', 'refresh');
             }
         } else {
 
@@ -81,9 +84,9 @@ class Petugas extends CI_Controller
 
         if ($this->form_validation->run() == TRUE) {
 
-            if ($this->m_petugas->m_cek_mail()->num_rows() == 1) {
+            if ($this->M_petugas->m_cek_mail()->num_rows() == 1) {
 
-                $db = $this->m_petugas->m_cek_mail()->row();
+                $db = $this->M_petugas->m_cek_mail()->row();
                 if (hash_verified($this->input->post('password'), $db->password)) {
 
                     $data_login = array(
@@ -95,16 +98,16 @@ class Petugas extends CI_Controller
                     );
 
                     $this->session->set_userdata($data_login);
-                    redirect('petugas/index', 'refresh');
+                    redirect('Petugas/index', 'refresh');
                 } else {
 
                     $this->session->set_flashdata('pesan', 'Login gagal: password salah!');
-                    redirect('petugas/login/index', 'refresh');
+                    redirect('Petugas/login/index', 'refresh');
                 }
             } else { // jika email tidak terdaftar!
 
                 $this->session->set_flashdata('pesan', 'Login gagal: email salah!');
-                redirect('petugas/login/index', 'refresh');
+                redirect('Petugas/login/index', 'refresh');
             }
         } else {
 
@@ -123,7 +126,7 @@ class Petugas extends CI_Controller
 
         session_destroy();
         //$this->session->set_flashdata('pesan', 'Sign Out Berhasil!');
-        redirect('petugas/login/index', 'refresh');
+        redirect('Petugas/login/index', 'refresh');
     }
 }
 

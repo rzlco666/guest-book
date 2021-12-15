@@ -41,6 +41,7 @@
                                             <th>Nama</th>
                                             <th>No HP</th>
                                             <th>Alamat/Institusi</th>
+                                            <th>Kategori</th>
                                             <th>Keperluan</th>
                                             <th>Tanggal</th>
                                             <th>Jam</th>
@@ -54,6 +55,7 @@
                                             <td><?php echo $datatamu->nama;?></td>
                                             <td><?php echo $datatamu->no_hp;?></td>
                                             <td><?php echo $datatamu->alamat;?></td>
+                                            <td><?php echo $datatamu->kategori;?></td>
                                             <td><?php echo $datatamu->keperluan;?></td>
                                             <td><?php echo $datatamu->tanggal;?></td>
                                             <td><?php echo $datatamu->jam;?></td>

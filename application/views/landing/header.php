@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Buku Tamu &mdash; Institut Teknologi Sains dan Kesehatan PKU Muhammadiyah Surakarta.</title>
+    <title>Buku Tamu &mdash; ITS PKU Muhammadiyah Surakarta.</title>
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/owl.carousel/css/owl.carousel.css">
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendors/owl.carousel/css/owl.theme.default.min.css">

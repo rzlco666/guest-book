@@ -13,6 +13,7 @@ class M_tamu extends CI_Model
             'nama' => $this->input->post('nama'),
             'no_hp' => $this->input->post('no_hp'),
             'alamat' => $this->input->post('alamat'),
+            'id_kategori' => $this->input->post('id_kategori'),
             'keperluan' => $this->input->post('keperluan'),
         );
 

@@ -6,7 +6,7 @@ class Welcome extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model('m_tamu');
+        $this->load->model('M_tamu');
     }
 
 	/**
@@ -26,7 +26,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['tamu'] = $this->m_tamu->query("SELECT * FROM `tamu` WHERE date(tanggal) = CURDATE() ORDER BY `tanggal` ASC")->result();
+		$data['kategori'] = $this->M_tamu->query("SELECT * FROM kategori")->result_array();
+		$data['tamu'] = $this->M_tamu->query("SELECT id_tamu, nama, no_hp, alamat, keperluan, date_format(tanggal, '%d/%m/%Y') tanggal, date_format(tanggal, '%H:%i:%s') jam FROM `tamu` WHERE date(tanggal) = CURDATE() ORDER BY `tanggal` ASC")->result();
 
 		$this->load->view('landing/header');
 		$this->load->view('landing/index', $data);
@@ -39,11 +40,12 @@ class Welcome extends CI_Controller {
         $this->form_validation->set_rules('nama', 'Nama', 'required');
         $this->form_validation->set_rules('no_hp', 'No HP', 'required');
         $this->form_validation->set_rules('alamat', 'Alamat/Institusi', 'required');
+		$this->form_validation->set_rules('id_kategori', 'Kategori', 'required');
 		$this->form_validation->set_rules('keperluan', 'Keperluan', 'required');
 
         if ($this->form_validation->run() == TRUE) {
 
-            if ($this->m_tamu->m_register()) {
+            if ($this->M_tamu->m_register()) {
 
                 $this->session->set_flashdata('pesan_tamu', 'Buku tamu berhasil diinput!');
                 redirect('/#tamu', 'refresh');

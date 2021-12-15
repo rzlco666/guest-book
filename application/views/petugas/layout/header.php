@@ -45,7 +45,7 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        <a href="<?= base_url('petugas/'); ?>" class="logo logo-dark">
+                        <a href="<?= base_url('Petugas/'); ?>" class="logo logo-dark">
                             <span class="logo-sm">
                                 <img src="<?= base_url('assets/'); ?>images/favicon-itspku.png" alt="" height="22">
                             </span>
@@ -54,7 +54,7 @@
                             </span>
                         </a>
 
-                        <a href="<?= base_url('petugas/'); ?>" class="logo logo-light">
+                        <a href="<?= base_url('Petugas/'); ?>" class="logo logo-light">
                             <span class="logo-sm">
                                 <img src="<?= base_url('assets/'); ?>images/favicon-itspku.png" alt="" height="22">
                             </span>
@@ -119,7 +119,7 @@
                                 <a class="dropdown-item" href="#"><i class="mdi mdi-account-settings font-size-16 align-middle mr-1"></i> Settings</a>
                                 <a class="dropdown-item" href="#"><i class="mdi mdi-lock font-size-16 align-middle mr-1"></i> Lock screen</a>
                                 <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="<?= base_url('petugas/logout/'); ?>"><i class="mdi mdi-logout font-size-16 align-middle mr-1"></i> Logout</a>
+                            <a class="dropdown-item" href="<?= base_url('Petugas/logout/'); ?>"><i class="mdi mdi-logout font-size-16 align-middle mr-1"></i> Logout</a>
                         </div>
                     </div>
 

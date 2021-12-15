@@ -7,18 +7,26 @@ class DataTamu extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('m_tamu');
+        $this->load->model('M_tamu');
     }
 
     public function index()
     {
 
         if ($this->session->userdata('is_login') == FALSE) {
-            redirect('/petugas/login/', 'refresh');
+            redirect('/Petugas/login/', 'refresh');
         }
 
         $data['title'] = 'Data Tamu';
-        $data['tamu'] = $this->m_tamu->query("SELECT id_tamu, nama, no_hp, alamat, keperluan, date_format(tanggal, '%d/%m/%Y') tanggal, date_format(tanggal, '%H:%i:%s') jam FROM `tamu` ORDER BY `tanggal` DESC")->result();
+        $data['tamu'] = $this->M_tamu->query("SELECT 
+            t.id_tamu, t.nama, t.no_hp, t.alamat,
+            k.nama kategori,
+            t.keperluan, 
+            date_format(t.tanggal, '%d/%m/%Y') tanggal, 
+            date_format(t.tanggal, '%H:%i:%s') jam 
+        FROM `tamu` t
+        JOIN `kategori` k ON k.id_kategori = t.id_kategori 
+        ORDER BY t.tanggal DESC")->result();
 
         $this->load->view('petugas/layout/header', $data);
         $this->load->view('petugas/layout/sidebar');
@@ -31,8 +39,8 @@ class DataTamu extends CI_Controller
     {
         if (!isset($id_tamu)) show_404();
 
-        if ($this->m_tamu->hapus($id_tamu)) {
-            redirect('/datatamu', 'refresh');
+        if ($this->M_tamu->hapus($id_tamu)) {
+            redirect('/DataTamu', 'refresh');
         }
     }
 }

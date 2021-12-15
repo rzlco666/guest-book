@@ -1,73 +1,53 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_petugas extends CI_Model
+class M_kategori extends CI_Model
 {
 
-    private $table = 'petugas';
-
-    public function query($query)
-    {
-        return $this->db->query($query);
-    }
+    private $table = 'kategori';
 
     public function m_register()
     {
 
         $data = array(
-            'username' => $this->input->post('username'),
-            'email' => $this->input->post('email'),
             'nama' => $this->input->post('nama'),
-            'password' => get_hash($this->input->post('password'))
         );
 
-        return $this->db->insert('petugas', $data);
+        return $this->db->insert('kategori', $data);
     }
 
-    public function m_cek_mail()
-    {
-
-        return $this->db->get_where('petugas', array('email' => $this->input->post('email')));
-    }
-
-    public function save_petugas()
+    public function save_kategori()
     {
         $data = [
-            'username' => $this->input->post('username'),
-            'email' => $this->input->post('email'),
             'nama' => $this->input->post('nama'),
-            'password' => get_hash($this->input->post('password'))
         ];
 
         $this->db->insert($this->table, $data);
         return $this->db->affected_rows();
     }
 
-    public function update_petugas()
+    public function update_kategori()
     {
         $data = [
-            'username' => $this->input->post('username'),
-            'email' => $this->input->post('email'),
             'nama' => $this->input->post('nama'),
-            'password' => get_hash($this->input->post('password'))
         ];
 
         return $this->db->update($this->table, $data, [
-            'id_petugas' => $this->input->post('id_petugas')
+            'id_kategori' => $this->input->post('id_kategori')
         ]);
     }
 
-    public function delete_petugas()
+    public function delete_kategori()
     {
         return $this->db->delete($this->table, [
-            'id_petugas' => $this->input->post('id_petugas')
+            'id_kategori' => $this->input->post('id_kategori')
         ]);
     }
 
-    public function get_petugas_by_id()
+    public function get_kategori_by_id()
     {
         $data = [
-            'id_petugas' => $this->input->get('id_petugas')
+            'id_kategori' => $this->input->get('id_kategori')
         ];
 
         return $this->db->get_where($this->table, $data);
@@ -138,5 +118,5 @@ class M_petugas extends CI_Model
     }
 }
 
-/* End of file M_petugas.php */
-/* Location: ./application/models/M_petugas.php */
+/* End of file M_kategori.php */
+/* Location: ./application/models/M_kategori.php */
