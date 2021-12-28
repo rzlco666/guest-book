@@ -38,10 +38,8 @@ class Welcome extends CI_Controller
 	public function tracer()
 	{
 
-		$data['title'] = 'Tracer';
-
-		$this->load->view('landing/header', $data);
-		$this->load->view('landing/tracer', $data);
+		$this->load->view('landing/header');
+		$this->load->view('landing/tracer');
 		$this->load->view('landing/footer');
 	}
 
