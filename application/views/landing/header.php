@@ -32,7 +32,7 @@
                     <li class="nav-item active">
                         <?php if ($title == 'Tracer') {
                         ?>
-                            <a class="nav-link" href="<?= base_url('/'); ?>#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="<?= base_url('Welcome/'); ?>#home">Home <span class="sr-only">(current)</span></a>
                         <?php
                         } else {
                         ?>
