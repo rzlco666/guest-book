@@ -30,7 +30,16 @@
                 </div>
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <?php if ($title == 'Tracer') {
+                        ?>
+                            <a class="nav-link" href="<?= base_url('/'); ?>#home">Home <span class="sr-only">(current)</span></a>
+                        <?php
+                        } else {
+                        ?>
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <?php
+                        }
+                        ?>
                     </li>
                     <li class="nav-item mr-0">
                         <a class="nav-link" href="#tamu">Buku Tamu</a>
