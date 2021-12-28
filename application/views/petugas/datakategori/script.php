@@ -20,7 +20,7 @@
             bDestroy: true,
             responsive: true,
             ajax: {
-                url: "<?= base_url('datakategori/get_kategori'); ?>",
+                url: "<?= base_url('DataKategori/get_kategori'); ?>",
                 type: "POST",
                 data: {},
             },
@@ -41,14 +41,14 @@
         switch (status) {
             case 'tambah':
                 $('#btn-proses').text('Save Changes');
-                url = "<?= base_url('datakategori/save_kategori'); ?>";
+                url = "<?= base_url('DataKategori/save_kategori'); ?>";
                 break;
             case 'edit':
                 $('#btn-proses').text('Update Changes');
-                url = "<?= base_url('datakategori/update_kategori'); ?>";
+                url = "<?= base_url('DataKategori/update_kategori'); ?>";
                 break;
             case 'hapus':
-                url = "<?= base_url('datakategori/delete_kategori'); ?>";
+                url = "<?= base_url('DataKategori/delete_kategori'); ?>";
                 break;
         }
     }
@@ -70,7 +70,7 @@
             .find('.modal-title').text('Edit Data');
         clear_form();
         $.ajax({
-            url: "<?= base_url('datakategori/edit_kategori'); ?>",
+            url: "<?= base_url('DataKategori/edit_kategori'); ?>",
             type: "GET",
             dataType: "JSON",
             data: {

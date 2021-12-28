@@ -12,7 +12,7 @@
                     <div class="col-md-8">
                         <h4 class="page-title mb-1">Data Buku Tamu</h4>
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="<?= base_url('petugas/'); ?>">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="<?= base_url('Petugas/'); ?>">Dashboard</a></li>
                             <li class="breadcrumb-item active">Data Buku Tamu</li>
                         </ol>
                     </div>
@@ -59,7 +59,7 @@
                                             <td><?php echo $datatamu->keperluan;?></td>
                                             <td><?php echo $datatamu->tanggal;?></td>
                                             <td><?php echo $datatamu->jam;?></td>
-                                            <td><a href="<?php echo base_url();?>datatamu/hapusdata/<?php echo $datatamu->id_tamu;?>" class="btn btn-danger btn-sm">Hapus</a></td>
+                                            <td><a href="<?php echo base_url();?>DataTamu/hapusdata/<?php echo $datatamu->id_tamu;?>" class="btn btn-danger btn-sm">Hapus</a></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </table>

@@ -20,7 +20,7 @@
             bDestroy: true,
             responsive: true,
             ajax: {
-                url: "<?= base_url('datapetugas/get_petugas'); ?>",
+                url: "<?= base_url('DataPetugas/get_petugas'); ?>",
                 type: "POST",
                 data: {},
             },
@@ -41,14 +41,14 @@
         switch (status) {
             case 'tambah':
                 $('#btn-proses').text('Save Changes');
-                url = "<?= base_url('datapetugas/save_petugas'); ?>";
+                url = "<?= base_url('DataPetugas/save_petugas'); ?>";
                 break;
             case 'edit':
                 $('#btn-proses').text('Update Changes');
-                url = "<?= base_url('datapetugas/update_petugas'); ?>";
+                url = "<?= base_url('DataPetugas/update_petugas'); ?>";
                 break;
             case 'hapus':
-                url = "<?= base_url('datapetugas/delete_petugas'); ?>";
+                url = "<?= base_url('DataPetugas/delete_petugas'); ?>";
                 break;
         }
     }
@@ -70,7 +70,7 @@
             .find('.modal-title').text('Edit Data');
         clear_form();
         $.ajax({
-            url: "<?= base_url('datapetugas/edit_petugas'); ?>",
+            url: "<?= base_url('DataPetugas/edit_petugas'); ?>",
             type: "GET",
             dataType: "JSON",
             data: {

@@ -42,7 +42,7 @@
                             <div class="p-2">
                                 <h5 class="mb-5 text-center">Login Petugas</h5>
                                 <font color="green"><?php echo $this->session->flashdata('pesan'); ?></font>
-                                <?php echo form_open('petugas/login_proses', ''); ?>
+                                <?php echo form_open('Petugas/login_proses', ''); ?>
 
                                 <div class="row">
                                     <div class="col-md-12">
@@ -75,7 +75,7 @@
                                             <button class="btn btn-success btn-block waves-effect waves-light" type="submit">Log In</button>
                                         </div>
                                         <div class="mt-4 text-center">
-                                            <a href="<?= base_url('petugas/register'); ?>" class="text-muted"><i class="mdi mdi-account-circle mr-1"></i> Create an account</a>
+                                            <a href="<?= base_url('Petugas/register'); ?>" class="text-muted"><i class="mdi mdi-account-circle mr-1"></i> Create an account</a>
                                         </div>
                                     </div>
                                 </div>

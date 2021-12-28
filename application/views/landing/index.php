@@ -33,7 +33,7 @@
 							<p class="mb-4">
 								<font color="green"><?php echo $this->session->flashdata('pesan_tamu'); ?></font>
 							</p>
-							<?php echo form_open('welcome/tamu_proses', ''); ?>
+							<?php echo form_open('Welcome/tamu_proses', ''); ?>
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="form-group">
