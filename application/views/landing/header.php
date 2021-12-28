@@ -30,10 +30,10 @@
                 </div>
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?= base_url('/'); ?>#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?= base_url('/'); ?>">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-0">
-                        <a class="nav-link" href="<?= base_url('/'); ?>#tamu">Buku Tamu</a>
+                        <a class="nav-link" href="#tamu">Buku Tamu</a>
                     </li>
                     <li class="nav-item ml-0">
                         <a class="nav-link" target="_blank" href="https://pmb.itspku.ac.id/">Info PMB</a>
