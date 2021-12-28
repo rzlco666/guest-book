@@ -11,47 +11,16 @@
                             <a href="mailto:info@itspku.ac.id" class="footer-link">info@itspku.ac.id</a>
                         </div>
                     </address>
-                    <div class="social-icons">
-                        <h6 class="footer-title font-weight-bold">
-                            Social Share
-                        </h6>
-                        <div class="d-flex">
-                            <a href="#"><i class="mdi mdi-github-circle"></i></a>
-                            <a href="#"><i class="mdi mdi-facebook-box"></i></a>
-                            <a href="#"><i class="mdi mdi-twitter"></i></a>
-                            <a href="#"><i class="mdi mdi-dribbble"></i></a>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h6 class="footer-title">Social Share</h6>
-                            <ul class="list-footer">
-                                <li><a href="#" class="footer-link">Home</a></li>
-                                <li><a href="#" class="footer-link">About</a></li>
-                                <li><a href="#" class="footer-link">Services</a></li>
-                                <li><a href="#" class="footer-link">Portfolio</a></li>
-                                <li><a href="#" class="footer-link">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h6 class="footer-title">Product</h6>
-                            <ul class="list-footer">
-                                <li><a href="#" class="footer-link">Digital Marketing</a></li>
-                                <li><a href="#" class="footer-link">Web Development</a></li>
-                                <li><a href="#" class="footer-link">App Development</a></li>
-                                <li><a href="#" class="footer-link">Design</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h6 class="footer-title">Company</h6>
-                            <ul class="list-footer">
-                                <li><a href="#" class="footer-link">Partners</a></li>
-                                <li><a href="#" class="footer-link">Investors</a></li>
-                                <li><a href="#" class="footer-link">Partners</a></li>
-                                <li><a href="#" class="footer-link">FAQ</a></li>
-                            </ul>
+                    <h6 class="footer-title font-weight-bold">
+                        Social Share
+                    </h6>
+                    <div class="social-icons">
+                        <div class="d-flex">
+                            <a target="_blank" href="https://www.instagram.com/itspkumuhsurakarta/"><i class="mdi mdi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/user/STIKESPKU"><i class="mdi mdi-youtube"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/humasstikespku/"><i class="mdi mdi-facebook"></i></a>
                         </div>
                     </div>
                 </div>
@@ -63,12 +32,10 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center">
                     <img src="<?= base_url('assets/'); ?>images/logo_web2.png" alt="ITS PKU" class="mr-3">
-                    <p class="mb-0 text-small pt-1"><?php echo date("Y"); ?> © ITS PKU Muhammadiyah Surakarta.</p>
                 </div>
                 <div>
                     <div class="d-flex">
-                        <a href="#" class="text-small text-white mx-2 footer-link">Privacy Policy </a>
-                        <a href="#" class="text-small text-white mx-2 footer-link">Customer Support </a>
+                        <p class="mb-0 text-small pt-1"><?php echo date("Y"); ?> © ITS PKU Muhammadiyah Surakarta.</p>
                     </div>
                 </div>
             </div>

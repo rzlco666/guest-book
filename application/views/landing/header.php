@@ -32,21 +32,12 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>-->
-                    <li class="nav-item">
+                    <li class="nav-item mr-0">
                         <a class="nav-link" href="#tamu">Buku Tamu</a>
-                    </li> 
-                    <!-- <li class="nav-item">
-                        <a class="nav-link btn btn-success" href="#contact">174-394-9560</a>
-                    </li> -->
+                    </li>
+                    <li class="nav-item ml-0">
+                        <a class="nav-link" target="_blank" href="https://pmb.itspku.ac.id/">Info PMB</a>
+                    </li>
                 </ul>
             </div>
         </div>

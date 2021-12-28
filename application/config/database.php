@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => '103.129.223.254',
+	'username' => 'itspkuac_guest',
+	'password' => 'S^pQAZtwlr*_',
 	'database' => 'guest-book',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

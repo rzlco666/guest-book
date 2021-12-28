@@ -1,13 +1,14 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends CI_Controller
+{
 
 	public function __construct()
-    {
-        parent::__construct();
-        $this->load->model('M_tamu');
-    }
+	{
+		parent::__construct();
+		$this->load->model('M_tamu');
+	}
 
 	/**
 	 * Index Page for this controller.
@@ -34,29 +35,46 @@ class Welcome extends CI_Controller {
 		$this->load->view('landing/footer');
 	}
 
-	public function tamu_proses()
-    {
+	public function tracer()
+	{
 
-        $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('no_hp', 'No HP', 'required');
-        $this->form_validation->set_rules('alamat', 'Alamat/Institusi', 'required');
+		$this->load->view('landing/header');
+		$this->load->view('landing/tracer');
+		$this->load->view('landing/footer');
+	}
+
+	public function tamu_proses()
+	{
+
+		$this->form_validation->set_rules('nama', 'Nama', 'required');
+		$this->form_validation->set_rules('no_hp', 'No HP', 'required');
+		$this->form_validation->set_rules('alamat', 'Alamat/Institusi', 'required');
 		$this->form_validation->set_rules('id_kategori', 'Kategori', 'required');
 		$this->form_validation->set_rules('keperluan', 'Keperluan', 'required');
 
-        if ($this->form_validation->run() == TRUE) {
+		$check = $this->input->post('id_kategori');
 
-            if ($this->M_tamu->m_register()) {
+		if ($this->form_validation->run() == TRUE) {
 
-                $this->session->set_flashdata('pesan_tamu', 'Buku tamu berhasil diinput!');
-                redirect('/#tamu', 'refresh');
-            } else {
+			if ($this->M_tamu->m_register()) {
 
-                $this->session->set_flashdata('pesan_tamu', 'Buku tamu gagal diinput!');
-                redirect('/#tamu', 'refresh');
-            }
-        } else {
+				if ($check == 6) {
 
-            $this->load->view('landing/index');
-        }
-    }
+					$this->session->set_flashdata('pesan_tamu', 'Buku tamu berhasil diinput!');
+					redirect('/Welcome/tracer', 'refresh');
+				} else {
+
+					$this->session->set_flashdata('pesan_tamu', 'Buku tamu berhasil diinput!');
+					redirect('/#tamu', 'refresh');
+				}
+			} else {
+
+				$this->session->set_flashdata('pesan_tamu', 'Buku tamu gagal diinput!');
+				redirect('/#tamu', 'refresh');
+			}
+		} else {
+
+			$this->load->view('landing/index');
+		}
+	}
 }
