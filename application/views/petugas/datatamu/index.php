@@ -57,8 +57,7 @@
                                             <td><?php echo $datatamu->alamat;?></td>
                                             <td><?php echo $datatamu->kategori;?></td>
                                             <td><?php echo $datatamu->keperluan;?></td>
-                                            <td><?php echo format_indo2($datatamu->tanggal);?></td>
-                                            <!-- <td><?php echo $datatamu->tanggal;?></td> -->
+                                            <td><?php echo $datatamu->tanggal;?></td>
                                             <td><?php echo $datatamu->jam;?></td>
                                             <td><a href="<?php echo base_url();?>DataTamu/hapusdata/<?php echo $datatamu->id_tamu;?>" class="btn btn-danger btn-sm">Hapus</a></td>
                                         </tr>
