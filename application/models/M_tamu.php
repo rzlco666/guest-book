@@ -34,6 +34,10 @@ class M_tamu extends CI_Model
         return $this->db->delete($this->table, array('id_tamu' => $id_tamu));
     }
 
+    public function hapusexpo($id_expo){
+        return $this->db->delete('expo', array('id_expo' => $id_expo));
+    }
+
     /* public function save_petugas()
     {
         $data = [
