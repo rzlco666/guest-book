@@ -37,13 +37,14 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <select name="id_kategori" class="form-control">
+                                <!-- <select name="id_kategori" class="form-control">
                                     <option disabled="disabled" selected>Pilih EXPO</option>
                                     <?php foreach ($kategori as $jenis) { ?>
                                         <option value="<?php echo $jenis['id_kategori'] ?>"><?php echo $jenis['nama'] ?></option>
                                     <?php } ?>
-                                </select>
-                                <?php echo form_error('alamat', '<div class="text-danger"><small>', '</small></div>'); ?>
+                                </select> -->
+                                <input type="hidden" class="form-control" name="id_kategori" id="id_kategori" value="6">
+                                <?php echo form_error('kategori', '<div class="text-danger"><small>', '</small></div>'); ?>
                             </div>
                         </div>
                         <div class="col-sm-6">
