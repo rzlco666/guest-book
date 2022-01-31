@@ -32,7 +32,7 @@
                                     <a href="javascript:;" onclick="tambah()" class="btn btn-primary">Tambah Data</a>
                                 </div>
 
-                                <table id="tabel-kategori" id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <table id="tabel-kategori-expo" id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                     <thead>
                                         <tr>
                                             <th class="text-center">

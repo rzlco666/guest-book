@@ -10,7 +10,7 @@
 
     // Fungsi untuk menampilkan data siswa
     function tampil_kategori() {
-        $('#tabel-kategori').DataTable({
+        $('#tabel-kategori-expo').DataTable({
             dom: 'Bfrtip',
             buttons: [
                 'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
