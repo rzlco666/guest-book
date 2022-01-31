@@ -13,7 +13,7 @@ class M_kategoriexpo extends CI_Model
             'nama' => $this->input->post('nama'),
         );
 
-        return $this->db->insert('kategori', $data);
+        return $this->db->insert('kategori_expo', $data);
     }
 
     public function save_kategori()
