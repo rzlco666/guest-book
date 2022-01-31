@@ -54,7 +54,7 @@ class DataPetugas extends CI_Controller
                 "data"              => $data,
             ];
 
-            echo json_encode($output);
+            $this->output->set_content_type('application/json')->set_output(json_encode($output));
         }
     }
 
@@ -69,7 +69,7 @@ class DataPetugas extends CI_Controller
                 $this->outputs['message']   = "Data berhasil disimpan !";
             }
 
-            echo json_encode($this->outputs);
+            $this->output->set_content_type('application/json')->set_output(json_encode($this->outputs));
         }
     }
 
@@ -84,7 +84,7 @@ class DataPetugas extends CI_Controller
                 $this->outputs['status']  = true;
             }
 
-            echo json_encode($this->outputs);
+            $this->output->set_content_type('application/json')->set_output(json_encode($this->outputs));
         }
     }
 
@@ -99,7 +99,7 @@ class DataPetugas extends CI_Controller
                 $this->outputs['message'] = "Data berhasil diupdate !";
             }
 
-            echo json_encode($this->outputs);
+            $this->output->set_content_type('application/json')->set_output(json_encode($this->outputs));
         }
     }
 
@@ -114,7 +114,7 @@ class DataPetugas extends CI_Controller
                 $this->outputs['message'] = "Data berhasil dihapus !";
             }
 
-            echo json_encode($this->outputs);
+            $this->output->set_content_type('application/json')->set_output(json_encode($this->outputs));
         }
     }
 }
