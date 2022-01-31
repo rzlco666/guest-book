@@ -38,6 +38,21 @@
                                 </a>
                             </li>
 
+                            <li class="menu-title">Expo</li>
+                            <li>
+                                <a href="<?= base_url('DataExpo/'); ?>" class=" waves-effect">
+                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-comment-message"></i></div>
+                                    <span>Data Expo</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="<?= base_url('DataKategoriExpo/'); ?>" class=" waves-effect">
+                                    <div class="d-inline-block icons-sm mr-1"><i class="uim uim-grids"></i></div>
+                                    <span>Data Kategori Expo</span>
+                                </a>
+                            </li>
+
                         </ul>
 
                     </div>
