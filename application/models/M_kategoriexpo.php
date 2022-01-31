@@ -33,21 +33,21 @@ class M_kategoriexpo extends CI_Model
         ];
 
         return $this->db->update($this->table, $data, [
-            'id_kategori_expo' => $this->input->post('id_kategori_expo')
+            'id_kategori' => $this->input->post('id_kategori')
         ]);
     }
 
     public function delete_kategori()
     {
         return $this->db->delete($this->table, [
-            'id_kategori_expo' => $this->input->post('id_kategori_expo')
+            'id_kategori' => $this->input->post('id_kategori')
         ]);
     }
 
     public function get_kategori_by_id()
     {
         $data = [
-            'id_kategori_expo' => $this->input->get('id_kategori_expo')
+            'id_kategori' => $this->input->get('id_kategori')
         ];
 
         return $this->db->get_where($this->table, $data);
