@@ -79,7 +79,7 @@ $db['default'] = array(
 	'username' => 'itspkuac_guest',
 	'password' => 'S^pQAZtwlr*_',
 	'database' => 'itspkuac_guest',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
